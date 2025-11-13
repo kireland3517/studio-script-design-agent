@@ -1,10 +1,19 @@
-# Studio Script Design - AI Design Agent
+# Studio Script Design - Brand Strategy & Design Agent
 
-A conversational AI design consultant that helps you create modern, brand-aligned website designs with 2025/2026 trends for your Studio Script Design website.
+A conversational AI brand strategist and design consultant that helps you develop or refine your brand identity (colors, typography, voice) and create modern, brand-aligned website designs with 2025/2026 trends.
 
 ## What It Does
 
-This agent has natural conversations with you about:
+### Brand Strategy Mode (Optional)
+The agent can help you explore and refine your brand identity:
+- **Color Psychology:** Suggests color palettes based on your brand goals, industry, and emotional resonance
+- **Typography Pairing:** Recommends font combinations that match your brand personality
+- **Brand Positioning:** Explores what makes you different and how to communicate it visually
+- **Audience Alignment:** Ensures your brand resonates with your target audience
+- **Trend-Forward:** Incorporates 2025/2026 color and typography trends
+
+### Website Design Consultation
+Then has natural conversations with you about:
 - Layout preferences (bento grids, editorial layouts, etc.)
 - Interactive elements (hover effects, transitions, animations)
 - Spacing and typography decisions
@@ -15,9 +24,10 @@ Then generates comprehensive, Wix-ready design specifications.
 
 ## Features
 
-- **5-Stage Consultation Flow:** Discovery → Style Direction → Page-by-Page Design → Consistency Review → Specification Generation
-- **2025/2026 Trends:** Suggests modern design trends aligned with your brand (kinetic typography, soft glassmorphism, generous whitespace, etc.)
-- **Brand-Aware:** Embedded with Studio Script Design brand guidelines
+- **Brand Strategy Consultation:** Explore colors, fonts, and brand identity before designing (optional)
+- **6-Stage Consultation Flow:** Brand Strategy (optional) → Discovery → Style Direction → Page-by-Page Design → Consistency Review → Specification Generation
+- **2025/2026 Trends:** Suggests modern design trends aligned with your brand (kinetic typography, soft glassmorphism, generous whitespace, muted earthy tones, etc.)
+- **Brand-Aware:** Can work with existing brand guidelines OR help create new ones
 - **Wix-Ready Output:** Generates specifications with step-by-step Wix implementation instructions
 - **Context Memory:** Remembers all decisions throughout the conversation
 - **Save & Resume:** Save conversations and continue later
@@ -58,7 +68,29 @@ copy .env.example .env
 python design_agent.py
 ```
 
-The agent will greet you and start the consultation. Just chat naturally about your design preferences!
+The agent will ask if you want to include brand strategy consultation:
+
+```
+Would you like to include brand strategy consultation?
+This helps refine your colors, fonts, and brand identity.
+
+Options:
+  1. Yes - Start with brand strategy (recommended if exploring new colors/fonts)
+  2. No - Use existing brand identity and design website
+
+Enter 1 or 2:
+```
+
+**Choose Option 1 if:**
+- You want to explore new colors or fonts
+- You're unsure about your current brand identity
+- You want strategic guidance on brand positioning
+
+**Choose Option 2 if:**
+- You're happy with your existing brand colors and fonts
+- You just want to design the website layout
+
+Then chat naturally about your brand and design preferences!
 
 ### During Consultation
 
